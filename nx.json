@@ -30,6 +30,16 @@
     }
   ],
   "release": {
-    "projects": ["packages/*"]
+    "projects": [
+      "packages/*"
+    ]
+  },
+  "namedInputs": {
+    "sharedGlobals": [
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ],
+    "default": [
+      "sharedGlobals"
+    ]
   }
 }
